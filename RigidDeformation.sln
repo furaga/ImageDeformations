@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RigidDeformation", "RigidDeformation\RigidDeformation\RigidDeformation.csproj", "{949672CC-07D4-4B0D-A65E-E13BE03679A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RigidDeformationContent", "RigidDeformation\RigidDeformationContent\RigidDeformationContent.contentproj", "{22710717-ACEB-4FF1-ACC7-5BCAFD0438E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{949672CC-07D4-4B0D-A65E-E13BE03679A8}.Debug|x86.ActiveCfg = Debug|x86
+		{949672CC-07D4-4B0D-A65E-E13BE03679A8}.Debug|x86.Build.0 = Debug|x86
+		{949672CC-07D4-4B0D-A65E-E13BE03679A8}.Release|x86.ActiveCfg = Release|x86
+		{949672CC-07D4-4B0D-A65E-E13BE03679A8}.Release|x86.Build.0 = Release|x86
+		{22710717-ACEB-4FF1-ACC7-5BCAFD0438E1}.Debug|x86.ActiveCfg = Debug|x86
+		{22710717-ACEB-4FF1-ACC7-5BCAFD0438E1}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
