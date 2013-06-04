@@ -42,13 +42,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Debug\DebugFont.spritefont">
-      <Name>DebugFont</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="WhitePixel.png">
       <Name>WhitePixel</Name>
       <Importer>TextureImporter</Importer>

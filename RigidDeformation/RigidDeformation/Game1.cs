@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using XNADebugger;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
@@ -22,12 +21,6 @@ namespace RigidDeformation
 
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch = null;
-
-        // デバッグマネージャー
-        DebugManager debugManager;
-
-        // FPSカウンター
-        FpsCounter fpsCounter;
 
         DynamicVertexBuffer texVertexBuffer = null;
         DynamicVertexBuffer dotVertexBuffer = null;
@@ -51,10 +44,6 @@ namespace RigidDeformation
 
         protected override void Initialize()
         {
-            debugManager = new DebugManager(this);
-            Components.Add(debugManager);
-            fpsCounter = new FpsCounter(this);
-            Components.Add(fpsCounter);
             base.Initialize();
         }
 
@@ -242,10 +231,10 @@ namespace RigidDeformation
             // 頂点データを頂点バッファに書き込む
             for (int i = 0; i < cps_cnt; i++)
             {
-                triangleStripVertices[texVertexSize + 4 * i].Position = cps[i] + new Vector3(-halfCPSize, halfCPSize, 0);
-                triangleStripVertices[texVertexSize + 4 * i + 1].Position = cps[i] + new Vector3(-halfCPSize, -halfCPSize, 0);
-                triangleStripVertices[texVertexSize + 4 * i + 2].Position = cps[i] + new Vector3(halfCPSize, halfCPSize, 0);
-                triangleStripVertices[texVertexSize + 4 * i + 3].Position = cps[i] + new Vector3(halfCPSize, -halfCPSize, 0);
+                triangleStripVertices[texVertexSize + 4 * i].Position = cps[i] + new Vector3(-halfCPSize, halfCPSize, -0.0001f);
+                triangleStripVertices[texVertexSize + 4 * i + 1].Position = cps[i] + new Vector3(-halfCPSize, -halfCPSize, -0.0001f);
+                triangleStripVertices[texVertexSize + 4 * i + 2].Position = cps[i] + new Vector3(halfCPSize, halfCPSize, -0.0001f);
+                triangleStripVertices[texVertexSize + 4 * i + 3].Position = cps[i] + new Vector3(halfCPSize, -halfCPSize, -0.0001f);
                 if (i == movingCP)
                 {
                     triangleStripVertices[texVertexSize + 4 * i].Color =
